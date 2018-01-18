@@ -1,0 +1,27 @@
+1.for k,v in i.items():
+遍历字典内元素和值
+2.修改字符串值的方法
+li=list(s)
+li[0]='x'
+s=''.join(li)
+修改的时候注意使用字符串
+3.切割符
+s = 'abc,def,ghi'
+p1, p2, p3 = s.split(',')
+4.文件读写
+with open('txt.txt') as f:
+	for line in f.readlines():
+		print line
+		
+with open('txt.txt') as f:
+	print f.read()
+	
+with open('txt.txt','w') as f:
+	f.write('123')
+5.多线程
+import threading
+threads=[]
+for i in range(5):
+	threads.append(threading.Thread(target=thread_func,args=(100,)))
+6.查看变量类型
+type
